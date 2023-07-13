@@ -1,4 +1,6 @@
 const router = require('express').Router();
+const { Post, User, Comment } = require("../models");
+// const withAuth = require("../utils/auth");
 
 //Here, we "render" the "homepage", specifically using the "layout" (aka, "partial") at '../views/layouts/"main".handlebars'. Name of the "partial" appears in 'quotes'.
 router.get('/', async (req, res) => {
