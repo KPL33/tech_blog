@@ -1,22 +1,36 @@
+{{! Here we have the html elements that will render on the page, supplemented by data rendered through our "handlebars" tags. The "home" page will appear to the user prior to them having logged-in. It shows, "sign-up", "log-in", etc. "dashboard" would be the 'main' page, appearing after log-in. On it, the user can see posts and logout. }}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech Blog</title>
+    <title>The Tech Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="../../css/styles.css" rel="stylesheet" />
   </head>
   <body>
-        <header>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/dashboard">Dashboard</a>
-            <a href="/logout">Logout</a>
-        </nav>
-        <h1>The Tech Blog</h1>
-        </header>
-        <main>
-        {{{body}}}
-        </main>
-
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/logout">Login</a>
+        <a href="/logout">Logout</a>
+      </nav>
+      <div id="boxes">
+        <div id="box">
+          <h1>The Tech Blog</h1>
+        </div>
+        <div id="shadow"></div>
+      </div>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
   </body>
 
 </html>
