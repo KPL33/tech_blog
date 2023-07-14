@@ -17,7 +17,7 @@ a {
 }
 
 #boxes {
-    margin: 20px;
+  margin: 20px;
 }
 
 #box {
@@ -49,6 +49,7 @@ h1 {
 }
 
 main {
+  padding: 40px;
   background-color:#d9f2d9;
   height: 100%;
 }
@@ -77,6 +78,18 @@ label.form-label {
   font-weight: bold;
 }
 
+.py-5 {
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+#login-title-box {
+  padding: 10px;
+  color: white;
+  background-color: #240c0f;
+  height: 60px;
+}
+
 .btn {
   background-color: gray;
   width: 100%;
@@ -87,6 +100,7 @@ label.form-label {
 }
 
 .card.mb-3 {
-  background-color: aqua;
+  border-radius: 0px;
   width: 80%;
+  border: 2pt #240c0f solid;
 }

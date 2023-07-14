@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post } = require('../models');
+const { Post } = require('../../models');
 
 // Route to display a single post
 router.get('/post/:id', async (req, res) => {
