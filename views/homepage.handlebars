@@ -1,1 +1,9 @@
 <h1>Main</h1>
+
+{{#each posts}}
+<div class="post">
+  <h2>{{title}}</h2>
+  <p>{{content}}</p>
+  <a href="/post/{{id}}">Read More</a>
+</div>
+{{/each}}
