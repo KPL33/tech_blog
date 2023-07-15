@@ -5,7 +5,7 @@ router.get('/', (req, res) => {
 });
 
 // Handle login form submission
-router.post('/', async (req, res) => {
+router.post('/signup', async (req, res) => {
   try {
     res.redirect('/dashboard');
   } catch (err) {
