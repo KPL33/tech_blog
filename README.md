@@ -13,7 +13,9 @@
 • WHEN I click on the homepage option, taken to the homepage
 • WHEN I click other links, prompted to sign up or sign in
 • WHEN click sign up, prompted to create a username and password
+
 • WHEN click on the sign-up button, user credentials saved and am logged into site
+
 • WHEN I revisit and choose to sign in, prompted enter username,password.
 WHEN signed in, see links for homepage,  dashboard, and log out.
 • WHEN click on homepage link, taken to homepage, presented existing blog posts that include the post title and the date created.
