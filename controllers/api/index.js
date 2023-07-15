@@ -3,8 +3,8 @@ const loginRoutes = require('./loginRoutes');
 const postRoutes = require('./postRoutes');
 const signupRoutes = require('./signupRoutes');
 
-router.use('/loginRoutes', loginRoutes);
-router.use('/postRoutes', postRoutes);
-router.use('/signupRoutes', signupRoutes);
+router.use('/login', loginRoutes);
+router.use('/post', postRoutes);
+router.use('/signup', signupRoutes);
 
 module.exports = router;

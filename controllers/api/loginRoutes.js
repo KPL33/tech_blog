@@ -1,12 +1,12 @@
 const router = require('express').Router();
 
 // Display the login form
-router.get('/login', (req, res) => {
+router.get('/', (req, res) => {
   res.render('login', { layout: 'main' });
 });
 
 // Handle login form submission
-router.post('/login', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     // Process the login request and authenticate the user
     // ...
