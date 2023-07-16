@@ -6,8 +6,7 @@ router.get('/', (req, res) => {
   res.render('signup', { layout: 'main' });
 });
 
-// Handle login form submission
-router.post('/signup', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const { username, password } = req.body;
 
@@ -19,7 +18,8 @@ router.post('/signup', async (req, res) => {
 
     await User.create({ username, password: hashedPassword });
 
-    // Redirect the user to their dashboard
+    req.session.signupSuccess = true;
+
     res.redirect('/dashboard');
   } catch (err) {
     res.status(500).json(err);
